@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Lets send some messages
+  form(action="/new", method="post")
+    span Author:
+    input(type="text", name="author")
+    br
+    span Text:
+    input(type="text", name="message")
+    br
+    input(type="submit", value="Add message")
